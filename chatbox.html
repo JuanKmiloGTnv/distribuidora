@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte</title>
+    <link rel="stylesheet" href="css/estilo_box.css">
+</head>
+<body>
+    <header>
+        <h1 class="Distribuidora">DISTRIBUIDORA SINGER PARA EL VALLE S.A.S</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html" target="_blank">Inicio</a>
+                    <a href="productos.html" target="_blank"> Producto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenedor principal del chatbox -->
+    <div class="chatbox-container">
+        <!-- Encabezado del chatbox -->
+        <div class="chatbox-header">
+            <h3>Preguntas Frecuentes</h3>
+        </div>
+        <!-- Área donde se mostrarán los mensajes -->
+        <div class="chatbox-messages" id="chatbox-messages">
+            <!-- Mensaje de bienvenida del bot -->
+            <div class="message bot-message">¡Hola! ¿En qué puedo ayudarte hoy?</div>
+            <!-- Opciones que el usuario puede seleccionar -->
+            <div class="message bot-message">
+                <button onclick="handleOption('Accesorios')">¿Qué accesorios incluye la máquina?</button>
+                <button onclick="handleOption('Garantía')">¿Cuál es la garantía de las máquinas?</button>
+                <button onclick="handleOption('Tipos de máquinas')">¿Qué tipos de máquinas ofrecen?</button>
+                <button onclick="handleOption('Facilidad de uso')">¿Las máquinas son fáciles de usar?</button>
+                <button onclick="handleOption('Correo electrónico')"> ¿Cuál es su correo electrónico?</button>
+            </div>
+        </div>
+        <!-- Área de entrada de texto para el usuario -->
+        <div class="chatbox-input">
+            <input type="text" id="user-input" placeholder="Escribe tu pregunta...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+   
+    <script src="backend.js"></script>
+    <footer>
+        <p>&copy; 2024 DISTRIBUIDORA SINGER PARA EL VALLE S.A.S. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
